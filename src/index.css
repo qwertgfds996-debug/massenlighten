@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --color-gold-600: #D1AA73;
+  --color-gold-700: #B58F5A;
+  --color-gold-500: #E8D7BE;
+  --color-gold-400: #F2E8D9;
+  --color-gold-100: #F9F4ED;
+  --color-gold-50: #FCFAF7;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-600 to-gold-500;
+}
+
+.markdown-body table {
+  @apply w-full border-collapse mb-4 text-sm;
+}
+.markdown-body th {
+  @apply bg-slate-100 border border-slate-200 p-3 text-left font-bold text-slate-900;
+}
+.markdown-body td {
+  @apply border border-slate-200 p-3 text-slate-700;
+}
+.markdown-body tr:nth-child(even) {
+  @apply bg-slate-50;
+}
