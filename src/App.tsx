@@ -1381,45 +1381,72 @@ export default function App() {
       </section>
 
       {/* Full-width Registration Image with Centered Button */}
-      <section className="relative w-full overflow-hidden md:pt-0 pb-0 md:pb-24 bg-white">
-        <img 
-          src="https://i.imgur.com/pNXQsVW.jpeg" 
-          alt="報名資訊" 
-          referrerPolicy="no-referrer"
-          className="w-full h-[180px] md:h-auto object-cover md:object-contain block"
-        />
+      <section className="w-full overflow-hidden md:pt-0 pb-0 md:pb-24 bg-white">
+        {/* 手機：文案與按鈕在橫幅圖正上方（勿用 absolute 蓋在雙圖上） */}
+        <div className="flex flex-col items-center gap-2 px-6 pt-6 pb-4 md:hidden">
+          <motion.span
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-slate-800 font-light text-[15px] text-center"
+          >
+            上課即可觀看每日盤勢佈局，掌握第一手資訊
+          </motion.span>
+          <motion.a 
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}
+            href="https://line.me/R/ti/p/@soya666" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-gold-600 hover:bg-gold-700 text-white font-black py-1.5 px-5 rounded-full shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 group whitespace-nowrap"
+          >
+            <span className="text-[15px] text-center">加入官方Line報名，觀看每日分析佈局</span>
+          </motion.a>
+        </div>
+
+        <div className="relative w-full">
+          <img 
+            src="https://i.imgur.com/pNXQsVW.jpeg" 
+            alt="報名資訊" 
+            referrerPolicy="no-referrer"
+            className="w-full h-[180px] md:h-auto object-cover md:object-contain block"
+          />
+          <div className="absolute inset-0 hidden md:flex md:items-start justify-center p-6 md:pt-32">
+            <div className="flex flex-col items-center gap-2 md:gap-6">
+              <motion.span
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="text-white font-light text-[15px] md:text-lg lg:text-xl text-center"
+              >
+                上課即可觀看每日盤勢佈局，掌握第一手資訊
+              </motion.span>
+              <motion.a 
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}
+                href="https://line.me/R/ti/p/@soya666" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gold-600 hover:bg-gold-700 text-white font-black py-1.5 px-5 md:py-3 md:px-8 rounded-full shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 group whitespace-nowrap"
+              >
+                <span className="text-[15px] md:text-[28px] text-center">加入官方Line報名，觀看每日分析佈局</span>
+                <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform duration-300 hidden md:block" />
+              </motion.a>
+            </div>
+          </div>
+        </div>
         <img 
           src="https://i.imgur.com/euamyFt.jpeg" 
           alt="報名資訊補充" 
           referrerPolicy="no-referrer"
-          className="w-full h-auto block md:hidden"
+          className="hidden md:block w-full h-auto"
         />
-        <div className="absolute inset-0 flex items-center md:items-start justify-center p-6 md:pt-32">
-          <div className="flex flex-col items-center gap-2 md:gap-6">
-            <motion.span
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-white font-light text-[15px] md:text-lg lg:text-xl text-center"
-            >
-              上課即可觀看每日盤勢佈局，掌握第一手資訊
-            </motion.span>
-            <motion.a 
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}
-              href="https://line.me/R/ti/p/@soya666" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-gold-600 hover:bg-gold-700 text-white font-black py-1.5 px-5 md:py-3 md:px-8 rounded-full shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 group whitespace-nowrap"
-            >
-              <span className="text-[15px] md:text-[28px] text-center">加入官方Line報名，觀看每日分析佈局</span>
-              <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform duration-300 hidden md:block" />
-            </motion.a>
-          </div>
-        </div>
       </section>
 
       {/* Video Section */}
@@ -1599,20 +1626,6 @@ export default function App() {
               <img 
                 src="https://i.imgur.com/PeN8RZ6.jpeg" 
                 alt="實戰見證 2" 
-                className="w-full h-auto hover:scale-105 transition-transform duration-700" 
-                referrerPolicy="no-referrer" 
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              className="rounded-3xl overflow-hidden shadow-2xl md:hidden"
-            >
-              <img 
-                src="https://i.imgur.com/euamyFt.jpeg" 
-                alt="實戰見證 3" 
                 className="w-full h-auto hover:scale-105 transition-transform duration-700" 
                 referrerPolicy="no-referrer" 
               />
