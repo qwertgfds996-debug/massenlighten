@@ -1174,7 +1174,7 @@ export default function App() {
       <section className="w-full bg-[#4E342E] md:bg-white">
         <div className="max-w-7xl mx-auto px-0 md:px-6 pt-12 pb-0 md:py-24">
           <img 
-            src="https://i.imgur.com/8o61yM5.jpeg" 
+            src="https://i.imgur.com/xHEVFgF.jpeg" 
             alt="Investment Strategy Banner" 
             className="w-full h-auto rounded-none md:rounded-3xl shadow-lg block"
             referrerPolicy="no-referrer"
@@ -1267,7 +1267,7 @@ export default function App() {
               className="mt-6 md:my-24 w-full max-w-5xl mx-auto px-0 md:px-4"
             >
               <img 
-                src="https://i.imgur.com/EoMgNMU.jpeg" 
+                src="https://i.imgur.com/t8KM7y9.jpeg" 
                 alt="破除困境示意圖" 
                 referrerPolicy="no-referrer"
                 className="w-full h-auto rounded-none md:rounded-[2rem]"
@@ -1375,7 +1375,7 @@ export default function App() {
               className="mt-6 md:my-24 w-full max-w-5xl mx-auto px-0 md:px-4"
             >
               <img 
-                src="https://i.imgur.com/GM1gaiR.jpeg" 
+                src="https://i.imgur.com/xXLc8E3.jpeg" 
                 alt="破除困境示意圖" 
                 referrerPolicy="no-referrer"
                 className="w-full h-auto rounded-none md:rounded-[2rem]"
@@ -1510,7 +1510,7 @@ export default function App() {
               className="mt-6 md:mt-8 md:mb-12 w-full max-w-5xl mx-auto px-0 md:px-4 relative group"
             >
               <img 
-                src="https://i.imgur.com/Nysc46m.jpeg" 
+                src="https://i.imgur.com/Wh2ml18.jpeg" 
                 alt="破除困境示意圖" 
                 referrerPolicy="no-referrer"
                 className="w-full h-auto rounded-none md:rounded-[2rem]"
