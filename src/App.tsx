@@ -1174,7 +1174,7 @@ export default function App() {
       <section className="w-full bg-[#4E342E] md:bg-white">
         <div className="max-w-7xl mx-auto px-0 md:px-6 pt-12 pb-0 md:py-24">
           <img 
-            src="https://i.imgur.com/xHEVFgF.jpeg" 
+            src="https://i.imgur.com/6KPyf3G.jpeg" 
             alt="Investment Strategy Banner" 
             className="w-full h-auto rounded-none md:rounded-3xl shadow-lg block"
             referrerPolicy="no-referrer"
