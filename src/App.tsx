@@ -1630,6 +1630,20 @@ export default function App() {
                 referrerPolicy="no-referrer" 
               />
             </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="rounded-3xl overflow-hidden shadow-2xl md:hidden"
+            >
+              <img
+                src="https://i.imgur.com/WHpY7w4.jpeg"
+                alt="實戰見證 3"
+                className="w-full h-auto hover:scale-105 transition-transform duration-700"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
           </div>
         </div>
       </section>
