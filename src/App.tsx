@@ -1510,7 +1510,7 @@ export default function App() {
               className="mt-6 md:mt-8 md:mb-12 w-full max-w-5xl mx-auto px-0 md:px-4 relative group"
             >
               <img 
-                src="https://i.imgur.com/Wh2ml18.jpeg" 
+                src="https://i.imgur.com/UHqfDtB.jpeg" 
                 alt="破除困境示意圖" 
                 referrerPolicy="no-referrer"
                 className="w-full h-auto rounded-none md:rounded-[2rem]"
